@@ -25,8 +25,8 @@ module.exports.transform = function (file) {
     .replace(MULTI_NEWLINE, EOL + EOL)
 
   var formatted = formatter.format(file, ESFORMATTER_CONFIG)
-    .replace(EOL_SEMICOLON, EOL)
-    .replace(EOL_SEMICOLON_WITH_COMMENT, '')
+    //.replace(EOL_SEMICOLON, EOL)
+    //.replace(EOL_SEMICOLON_WITH_COMMENT, '')
     .replace(SOF_NEWLINES, '')
 
   return formatted
